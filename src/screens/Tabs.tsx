@@ -182,6 +182,23 @@ export default function BasicTabs({ item }: any) {
             </Box>
           }
         </Box>
+        <Grid xs={12} sx={{display: {md: 'none'}}} mt={2}>
+            <div  style={{ width: '100%', height: '40vh' }}>
+              <GoogleMapReact
+                defaultCenter={center}
+                defaultZoom={15}
+                yesIWantToUseGoogleMapApiInternals
+                onGoogleApiLoaded={() => console.log('test')}
+                bootstrapURLKeys={{ key: 'AIzaSyBUbJQCHHpc0GKWODjwZP4bDd09Odkhc-c' }}
+
+              />
+            </div>
+
+
+
+
+
+          </Grid>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
 

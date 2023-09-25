@@ -12,7 +12,7 @@ const House = () => {
   const navigate = useNavigate();
 
   return (
-    <Grid mt={3}  marginX={10} borderRadius={5}  minHeight="80vh">
+    <Grid mt={3}  marginX="4vw" borderRadius={5}  minHeight="80vh">
       <Grid item width="100%" borderRadius={5} sx={{ backgroundColor: 'white', }} paddingY={3} paddingLeft={2} alignItems="center" marginBottom={-2} display="inline-flex">
        <Button onClick={() => navigate(-1)} >
        

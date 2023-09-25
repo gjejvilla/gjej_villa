@@ -13,7 +13,7 @@ import BedroomParentIcon from '@mui/icons-material/BedroomParent';
 export default function MultiActionAreaCard({item}: any) {
   return (
     <Card sx={{ maxWidth: 500, borderRadius: 5 }}>
-      <CardActionArea >
+      <CardActionArea href={`/Villa/${item.id}`}>
         <CardMedia
           component="img"
           height="140"
@@ -45,7 +45,7 @@ export default function MultiActionAreaCard({item}: any) {
       </CardActionArea>
       <CardActions >
         <Button size="small" sx={{color: '#748867', fontWeight:'600', paddingLeft:1}} href={`/Villa/${item.id}`}>
-          Me shume
+          Më shumë
         </Button>
       </CardActions>
     </Card>

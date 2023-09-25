@@ -72,7 +72,9 @@ function Navbar() {
 
 
       <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+        <Button    href={links[0]} >
       <img src={Logo} width={100} height={50} />
+      </Button>
       </Box>
 
         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -119,6 +121,9 @@ function Navbar() {
               </MenuItem>
             ))}
           </Menu>
+          <Button    href={links[0]} >
+      <img src={Logo} width={100} height={50} />
+      </Button>
         </Box>  
         <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex',  } }}>
           {pages.map((page, index) => (
