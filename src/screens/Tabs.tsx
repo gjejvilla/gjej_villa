@@ -93,6 +93,28 @@ export default function BasicTabs({ item }: any) {
                 </Box>
               </Grid>
               <Grid item xs={12} md={6}>
+                {item.socialLinks.facebook &&
+                  <Box display="inline-flex" flexGrow={1} width="100%" my={1}>
+
+                    <FacebookIcon />
+                    <Link ml={1} href={item.socialLinks.facebook} sx={{ textDecoration: 'none', color: '#748867', alignSelf: 'center' }} alignSelf={center} >Facebook</Link>
+                  </Box>
+                }
+                {item.socialLinks.insta &&
+                  <Box display="inline-flex" flexGrow={1} width="100%" my={1}>
+                    <InstagramIcon />
+                    <Link ml={1} href={item.socialLinks.insta} sx={{ textDecoration: 'none', color: '#748867', alignSelf: 'center' }}>Instagram</Link>
+
+                  </Box>
+                }
+                {item.socialLinks.booking &&
+                  <Box display="inline-flex" flexGrow={1} width="100%" my={1}>
+                    <OpenInNewIcon />
+                    <Link ml={1} href={item.socialLinks.booking} sx={{ textDecoration: 'none', color: '#748867', alignSelf: 'center' }}>Booking</Link>
+                  </Box>
+                }
+              </Grid>
+              {/* <Grid item xs={12} md={6}>
                 <Box display="inline-flex" flexGrow={1} width="100%" my={1} >
                   <WifiIcon />
                   <Typography ml={1} >WiFi</Typography>
@@ -105,7 +127,7 @@ export default function BasicTabs({ item }: any) {
                 <Box display="inline-flex" flexGrow={1} width="100%" my={1}>
                   <AcUnitIcon />
                   <Typography ml={1} >AC</Typography>
-                </Box> </Grid>
+                </Box> </Grid> */}
             </Grid>
 
           </Grid>
@@ -123,7 +145,7 @@ export default function BasicTabs({ item }: any) {
           </Grid>
 
         </Grid>
-        <Box display="inline" component="div" >
+        {/* <Box display="inline" component="div" >
           <Typography variant="h6" textAlign="left" mt={3}>
             Kontakti
           </Typography>
@@ -148,7 +170,7 @@ export default function BasicTabs({ item }: any) {
               <Link ml={1} href={item.socialLinks.booking} sx={{ textDecoration: 'none', color: '#748867', alignSelf: 'center' }}>Booking</Link>
             </Box>
           }
-        </Box>
+        </Box> */}
         <Grid xs={12} sx={{ display: { md: 'none' } }} mt={2}>
           <div style={{ width: '100%', height: '40vh' }}>
             <GoogleMapReact
