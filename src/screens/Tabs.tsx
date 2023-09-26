@@ -78,37 +78,7 @@ export default function BasicTabs({ item }: any) {
             </Typography>
             <Typography variant='h6' textAlign="left" mt={4}>Informatat </Typography>
             <Grid container spacing={2} sx={{ flexGrow: 1 }} >
-  <Grid item xs={12} md={6}>
-  <Box display="inline-flex" width="100%"  my={1}>
-                  <LocationOnIcon />
-                  <Typography ml={1}>{item.location}</Typography>
-                </Box>
-                <Box display="inline-flex" flexGrow={1} width="100%"  my={1}>
-                  <BedroomParentIcon />
-                  <Typography ml={1} >{item.rooms[0]} - {item.rooms[item.rooms.length - 1]} dhoma</Typography>
-                </Box>
-                <Box display="inline-flex" flexGrow={1} width="100%" my={1}>
-                  <GroupsIcon />
-                  <Typography ml={1}>{item.people[0]} - {item.people[item.people.length - 1]} persona</Typography>
-                </Box>
-  </Grid>
-  <Grid item xs={12} md={6}>
-  <Box display="inline-flex" flexGrow={1} width="100%" my={1} >
-                  <WifiIcon />
-                  <Typography ml={1} >WiFi</Typography>
-                </Box>
-                <Box display="inline-flex"  width="100%" my={1}>
-                  <PoolIcon />
-                  <Typography ml={1} >Pishine</Typography>
-
-                </Box> 
-                <Box display="inline-flex" flexGrow={1} width="100%" my={1}>
-                  <AcUnitIcon />
-                  <Typography ml={1} >AC</Typography>
-                </Box> </Grid>
-</Grid>
-            {/* <Grid container>
-              <Grid item xs={8}>
+              <Grid item xs={12} md={6}>
                 <Box display="inline-flex" width="100%" my={1}>
                   <LocationOnIcon />
                   <Typography ml={1}>{item.location}</Typography>
@@ -117,25 +87,27 @@ export default function BasicTabs({ item }: any) {
                   <BedroomParentIcon />
                   <Typography ml={1} >{item.rooms[0]} - {item.rooms[item.rooms.length - 1]} dhoma</Typography>
                 </Box>
-
                 <Box display="inline-flex" flexGrow={1} width="100%" my={1}>
                   <GroupsIcon />
                   <Typography ml={1}>{item.people[0]} - {item.people[item.people.length - 1]} persona</Typography>
                 </Box>
               </Grid>
-              <Grid item>
-                <Box display="inline-flex" flexGrow={1} width="100%" my={1}>
+              <Grid item xs={12} md={6}>
+                <Box display="inline-flex" flexGrow={1} width="100%" my={1} >
                   <WifiIcon />
                   <Typography ml={1} >WiFi</Typography>
                 </Box>
-                <Box display="inline-flex" flexGrow={1} width="100%" my={1}>
+                <Box display="inline-flex" width="100%" my={1}>
                   <PoolIcon />
                   <Typography ml={1} >Pishine</Typography>
 
                 </Box>
-              
-              </Grid>
-            </Grid> */}
+                <Box display="inline-flex" flexGrow={1} width="100%" my={1}>
+                  <AcUnitIcon />
+                  <Typography ml={1} >AC</Typography>
+                </Box> </Grid>
+            </Grid>
+
           </Grid>
           <Grid xs={12} md={4}>
             <Grid item sx={{ width: '100%', height: '100%' }}>
@@ -148,11 +120,6 @@ export default function BasicTabs({ item }: any) {
 
               />
             </Grid>
-
-
-
-
-
           </Grid>
 
         </Grid>
@@ -182,23 +149,20 @@ export default function BasicTabs({ item }: any) {
             </Box>
           }
         </Box>
-        <Grid xs={12} sx={{display: {md: 'none'}}} mt={2}>
-            <div  style={{ width: '100%', height: '40vh' }}>
-              <GoogleMapReact
-                defaultCenter={center}
-                defaultZoom={15}
-                yesIWantToUseGoogleMapApiInternals
-                onGoogleApiLoaded={() => console.log('test')}
-                bootstrapURLKeys={{ key: 'AIzaSyBUbJQCHHpc0GKWODjwZP4bDd09Odkhc-c' }}
+        <Grid xs={12} sx={{ display: { md: 'none' } }} mt={2}>
+          <div style={{ width: '100%', height: '40vh' }}>
+            <GoogleMapReact
+              defaultCenter={center}
+              defaultZoom={15}
+              yesIWantToUseGoogleMapApiInternals
+              onGoogleApiLoaded={() => console.log('test')}
+              bootstrapURLKeys={{ key: 'AIzaSyBUbJQCHHpc0GKWODjwZP4bDd09Odkhc-c' }}
 
-              />
-            </div>
-
-
+            />
+          </div>
 
 
-
-          </Grid>
+        </Grid>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
 
