@@ -74,158 +74,189 @@ import riza_2 from '../assets/images/gallery/riza/foto1.jpg'
 import riza_3 from '../assets/images/gallery/riza/foto2.jpg'
 import riza_4 from '../assets/images/gallery/riza/foto3.jpg'
 
+import teliqeni_1 from '../assets/images/gallery/teliqeni/10.png'
+import teliqeni_2 from '../assets/images/gallery/teliqeni/11.png'
+import teliqeni_3 from '../assets/images/gallery/teliqeni/13.png'
+import teliqeni_4 from '../assets/images/gallery/teliqeni/15.png'
+import teliqeni_5 from '../assets/images/gallery/teliqeni/222.jpg'
+import teliqeni_6 from '../assets/images/gallery/teliqeni/333.jpg'
+import teliqeni_7 from '../assets/images/gallery/teliqeni/367473559_673063334859069_1944184125940072291_n.jpg'
+import teliqeni_8 from '../assets/images/gallery/teliqeni/7.png'
+import teliqeni_9 from '../assets/images/gallery/teliqeni/8.png'
+import teliqeni_10 from '../assets/images/gallery/teliqeni/9.png'
+import teliqeni_11 from '../assets/images/gallery/teliqeni/12.png'
 
 
-const data=  [
-    {
-      id: 1,
-      name: 'Villa Nur',
-      rooms: ['1', '2', '3'], //numri i dhomave si array,
-      people: ['1', '2', '3', '4', '5', '6', '7', '8', '9'], //njejte si nalt,
-      image: nur_2, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [nur_1, nur_2, nur_3, nur_4, nur_5, nur_6, nur_7, nur_8],
-      socialLinks: {
-        insta: "https://www.instagram.com/apartmani.mavrovi.anovi/",
-        facebook: "", phoneNumber: "+38978345751", booking: "https://www.booking.com/hotel/mk/villa-nur-lake-view-apartaments-mavrovo-anovi.en-gb.html"
-      },
-      location: 'Mavrovë',
-      latLng: [41.70196426348148, 20.756985358071493], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-    {
-      id: 2,
-      name: 'Villa Riza',
-      rooms: ['1'], //numri i dhomave si array,
-      people: ['1', '2', '3'], //njejte si nalt,
-      image: riza_1, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [riza_1, riza_2, riza_3, riza_4],
-      socialLinks: { insta: "https://www.instagram.com/villarizagrashtice/", facebook: "https://www.facebook.com/villarizagrashtice", phoneNumber: "+38348883700", booking: "" },
-      location: 'Grashticë',
-      latLng: [42.69335154275393, 21.279656094765176], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-    {
-      id: 3,
-      name: 'Villat nPisha',
-      rooms: ['2'], //numri i dhomave si array,
-      people: ['1', '2', '3', '4', '5'], //njejte si nalt,
-      image: npishe_1, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [npishe_1, npishe_2, npishe_3, npishe_4, npishe_5],
-      socialLinks: { insta: "https://www.instagram.com/villat_npisharugove/", facebook: "https://www.facebook.com/villatnpisha", phoneNumber: "+38348636261", booking: "" },
-      location: 'Rugovë',
-      latLng: [42.692646039831075, 20.07390582976762], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-    {
-      id: 4,
-      name: 'Villat Oxygen',
-      rooms: ['2'], //numri i dhomave si array,
-      people: ['1', '2', '3', '4', '5', '6'], //njejte si nalt,
-      image: oxygen_prevalle_1, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [oxygen_prevalle_1, oxygen_prevalle_2, oxygen_prevalle_3],
-      socialLinks: { insta: "https://www.instagram.com/villaoxygen/", facebook: "https://www.facebook.com/villa.oxygen.prevalle", phoneNumber: "+38344130580", booking: "" },
-      location: 'Prevallë',
-      latLng: [42.18041383211748, 20.978281814906033], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-    {
-      id: 5,
-      name: 'Guri i Kuq',
-      rooms: ['1', '2'], //numri i dhomave si array,
-      people: ['1', '2', '3', '4', '5', '6'], //njejte si nalt,
-      image: guri_i_kuq_0, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [guri_i_kuq_0, guri_i_kuq_1, guri_i_kuq_2, guri_i_kuq_3, guri_i_kuq_4],
-      socialLinks: { insta: "https://www.instagram.com/guriikuqrestaurant", facebook: "https://www.facebook.com/RestaurantGuriIKuqRugove", phoneNumber: "+38349150551", booking: "" },
-      location: 'Rugovë',
-      latLng: [42.69134533664285, 20.112038079569615], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-    {
-      id: 6,
-      name: 'Villat nShpat',
-      rooms: ['2', '3'], //numri i dhomave si array,
-      people: ['1', '2', '3', '4', '5', '6'], //njejte si nalt,
-      image: nshpat_1, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [nshpat_1, nshpat_2, nshpat_3, nshpat_4, nshpat_5],
-      socialLinks: { insta: "https://www.instagram.com/villat.nshpat/", facebook: "https://www.facebook.com/profile.php?id=100047092166229", phoneNumber: "+38349826679", booking: "" },
-      location: 'Rugovë',
-      latLng: [42.689026543876025, 20.092682682595534], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-    {
-      id: 7,
-      name: 'Villa Marigo',
-      rooms: ['2'], //numri i dhomave si array,
-      people: ['1', '2', '3', '4', '5', '6'], //njejte si nalt,
-      image: marigo_1, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [marigo_1, marigo_2, marigo_3],
-      socialLinks: { insta: "https://www.instagram.com/villamarigo/", facebook: "https://www.facebook.com/Villamarigo2020", phoneNumber: "+38344936652", booking: "" },
-      location: 'Jezercë',
-      latLng: [42.37108894308116, 21.049825254944814], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-    {
-      id: 8,
-      name: 'Villat Natyra',
-      rooms: ['2'], //numri i dhomave si array,
-      people: ['1', '2', '3', '4', '5', '6', '7', '8'], //njejte si nalt,
-      image: natyra_1_b, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [natyra_1_b, natyra_2_b, natyra_3_b],
-      socialLinks: { insta: "https://www.instagram.com/villatnatyra/", facebook: "https://www.facebook.com/villatnatyra", phoneNumber: "+38349139419", booking: "" },
-      location: 'Rugovë',
-      latLng: [42.73969794330442, 20.05860304327046], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-    {
-      id: 9,
-      name: 'Villat Casa',
-      rooms: ['1', '2'], //numri i dhomave si array,
-      people: ['1', '2', '3', '4', '5', '6'], //njejte si nalt,
-      image: casa_r_1, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [casa_r_1, casa_r_2, casa_r_3, casa_r_4, casa_r_5],
-      socialLinks: { insta: "https://www.instagram.com/villat_casa/", facebook: "", phoneNumber: "+38349667648", booking: "" },
-      location: 'Rugovë',
-      latLng: [], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-    {
-      id: 10,
-      name: 'Villat Adriatiku',
-      rooms: ['1'], //numri i dhomave si array,
-      people: ['1', '2', '3', '4', '5'], //njejte si nalt,
-      image: adriatiku_1, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [adriatiku_1, adriatiku_2, adriatiku_3, adriatiku_4, adriatiku_5],
-      socialLinks: { insta: "https://www.instagram.com/villatadriatiku/", facebook: "https://www.facebook.com/Villat.Adriatiku", phoneNumber: "+38346200800", booking: "" },
-      location: 'Batllavë',
-      latLng: [42.81546100105599, 21.35712916939967], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-    {
-      id: 11,
-      name: 'Villa Kalaja',
-      rooms: ['1'], //numri i dhomave si array,
-      people: ['1', '2', '3', '4', '5', '6', '7', '8'], //njejte si nalt,
-      image: kalaja_j_1, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [kalaja_j_1, kalaja_j_2, kalaja_j_3, kalaja_j_4, kalaja_j_5],
-      socialLinks: { insta: "https://www.instagram.com/villakalaja_jezerc/", facebook: "https://www.facebook.com/profile.php?id=100063138524499", phoneNumber: "+38344224250", booking: "" },
-      location: 'Jezerc',
-      latLng: [], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-    {
-      id: 12,
-      name: 'Villa Roza',
-      rooms: ['1'], //numri i dhomave si array,
-      people: ['1', '2', '3', '4', '5'], //njejte si nalt,
-      image: roza_1, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [roza_1,roza_2,roza_3, roza_4, roza_5],
-      socialLinks: { insta: "https://www.instagram.com/villatrozaa/", facebook: "https://www.facebook.com/profile.php?id=100068831642222", phoneNumber: "+38349204206", booking: "" },
-      location: 'Novobërd',
-      latLng: [42.56213526274355, 21.43946585553549], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-    {
-      id: 13,
-      name: 'Bujtina Stanet',
-      rooms: ['1', '2'], //numri i dhomave si array,
-      people: ['1', '2', '3', '4', '5', '6', '7', '8'], //njejte si nalt,
-      image: stanet_1, // leje zbrazt si string, une ja shtoj linqet,
-      gallery: [stanet_1, stanet_2, stanet_3],
-      socialLinks: { insta: "https://www.instagram.com/bujtinat_malore_stanet/", facebook: "https://www.facebook.com/bujtinatmalore", phoneNumber: "+38345155545", booking: "" },
-      location: 'Novobërd',
-      latLng: [42.56181852443112, 21.43928703039411], //nese i ki latitude edhe langitude, qe jo leje zbrazt i shtoj une
-    },
-  
-  
-  ];
-  
 
-  export default data
+
+
+
+
+const data = [
+  {id: 0,
+    name: 'Te Liqeni',
+    rooms: ['1', '2'], 
+    people: ['1', '2', '3', '4', '5', '6','7','8','9'], 
+    image: teliqeni_1, 
+    gallery: [teliqeni_1,teliqeni_2, teliqeni_3, teliqeni_4, teliqeni_5, teliqeni_6, teliqeni_7, teliqeni_8, teliqeni_9, teliqeni_10, teliqeni_11],
+    socialLinks: { insta: "https://www.instagram.com/te_liqeni_rugove/", facebook: "https://www.facebook.com/Restaurant.Liqeni/photos/", phoneNumber: "+38349828834", booking: "" },
+    location: 'Rugovë',
+    latLng: [42.683292568943095, 20.085764075668592],
+  },
+  {
+    id: 1,
+    name: 'Villa Nur',
+    rooms: ['1', '2', '3'], 
+    people: ['1', '2', '3', '4', '5', '6', '7', '8', '9'], 
+    image: nur_2, 
+    gallery: [nur_1, nur_2, nur_3, nur_4, nur_5, nur_6, nur_7, nur_8],
+    socialLinks: {
+      insta: "https://www.instagram.com/apartmani.mavrovi.anovi/",
+      facebook: "", phoneNumber: "+38978345751", booking: "https://www.booking.com/hotel/mk/villa-nur-lake-view-apartaments-mavrovo-anovi.en-gb.html"
+    },
+    location: 'Mavrovë',
+    latLng: [41.70196426348148, 20.756985358071493], 
+  },
+  {
+    id: 2,
+    name: 'Villa Riza',
+    rooms: ['1'], 
+    people: ['1', '2', '3'], 
+    image: riza_1, 
+    gallery: [riza_1, riza_2, riza_3, riza_4],
+    socialLinks: { insta: "https://www.instagram.com/villarizagrashtice/", facebook: "https://www.facebook.com/villarizagrashtice", phoneNumber: "+38348883700", booking: "" },
+    location: 'Grashticë',
+    latLng: [42.69335154275393, 21.279656094765176], 
+  },
+  {
+    id: 3,
+    name: 'Villat nPisha',
+    rooms: ['2'], 
+    people: ['1', '2', '3', '4', '5'], 
+    image: npishe_1, 
+    gallery: [npishe_1, npishe_2, npishe_3, npishe_4, npishe_5],
+    socialLinks: { insta: "https://www.instagram.com/villat_npisharugove/", facebook: "https://www.facebook.com/villatnpisha", phoneNumber: "+38348636261", booking: "" },
+    location: 'Rugovë',
+    latLng: [42.692646039831075, 20.07390582976762], 
+  },
+  {
+    id: 4,
+    name: 'Villat Oxygen',
+    rooms: ['2'], 
+    people: ['1', '2', '3', '4', '5', '6'], 
+    image: oxygen_prevalle_1, 
+    gallery: [oxygen_prevalle_1, oxygen_prevalle_2, oxygen_prevalle_3],
+    socialLinks: { insta: "https://www.instagram.com/villaoxygen/", facebook: "https://www.facebook.com/villa.oxygen.prevalle", phoneNumber: "+38344130580", booking: "" },
+    location: 'Prevallë',
+    latLng: [42.18041383211748, 20.978281814906033], 
+  },
+  {
+    id: 5,
+    name: 'Guri i Kuq',
+    rooms: ['1', '2'], 
+    people: ['1', '2', '3', '4', '5', '6'], 
+    image: guri_i_kuq_0, 
+    gallery: [guri_i_kuq_0, guri_i_kuq_1, guri_i_kuq_2, guri_i_kuq_3, guri_i_kuq_4],
+    socialLinks: { insta: "https://www.instagram.com/guriikuqrestaurant", facebook: "https://www.facebook.com/RestaurantGuriIKuqRugove", phoneNumber: "+38349150551", booking: "" },
+    location: 'Rugovë',
+    latLng: [42.69134533664285, 20.112038079569615], 
+  },
+  {
+    id: 6,
+    name: 'Villat nShpat',
+    rooms: ['2', '3'], 
+    people: ['1', '2', '3', '4', '5', '6'], 
+    image: nshpat_1, 
+    gallery: [nshpat_1, nshpat_2, nshpat_3, nshpat_4, nshpat_5],
+    socialLinks: { insta: "https://www.instagram.com/villat.nshpat/", facebook: "https://www.facebook.com/profile.php?id=100047092166229", phoneNumber: "+38349826679", booking: "" },
+    location: 'Rugovë',
+    latLng: [42.689026543876025, 20.092682682595534], 
+  },
+  {
+    id: 7,
+    name: 'Villa Marigo',
+    rooms: ['2'], 
+    people: ['1', '2', '3', '4', '5', '6'], 
+    image: marigo_1, 
+    gallery: [marigo_1, marigo_2, marigo_3],
+    socialLinks: { insta: "https://www.instagram.com/villamarigo/", facebook: "https://www.facebook.com/Villamarigo2020", phoneNumber: "+38344936652", booking: "" },
+    location: 'Jezercë',
+    latLng: [42.37108894308116, 21.049825254944814], 
+  },
+  {
+    id: 8,
+    name: 'Villat Natyra',
+    rooms: ['2'], 
+    people: ['1', '2', '3', '4', '5', '6', '7', '8'], 
+    image: natyra_1_b, 
+    gallery: [natyra_1_b, natyra_2_b, natyra_3_b],
+    socialLinks: { insta: "https://www.instagram.com/villatnatyra/", facebook: "https://www.facebook.com/villatnatyra", phoneNumber: "+38349139419", booking: "" },
+    location: 'Rugovë',
+    latLng: [42.73969794330442, 20.05860304327046], 
+  },
+  {
+    id: 9,
+    name: 'Villat Casa',
+    rooms: ['1', '2'], 
+    people: ['1', '2', '3', '4', '5', '6'], 
+    image: casa_r_1, 
+    gallery: [casa_r_1, casa_r_2, casa_r_3, casa_r_4, casa_r_5],
+    socialLinks: { insta: "https://www.instagram.com/villat_casa/", facebook: "", phoneNumber: "+38349667648", booking: "" },
+    location: 'Rugovë',
+    latLng: [], 
+  },
+  {
+    id: 10,
+    name: 'Villat Adriatiku',
+    rooms: ['1'], 
+    people: ['1', '2', '3', '4', '5'], 
+    image: adriatiku_1, 
+    gallery: [adriatiku_1, adriatiku_2, adriatiku_3, adriatiku_4, adriatiku_5],
+    socialLinks: { insta: "https://www.instagram.com/villatadriatiku/", facebook: "https://www.facebook.com/Villat.Adriatiku", phoneNumber: "+38346200800", booking: "" },
+    location: 'Batllavë',
+    latLng: [42.81546100105599, 21.35712916939967], 
+  },
+  {
+    id: 11,
+    name: 'Villa Kalaja',
+    rooms: ['1'], 
+    people: ['1', '2', '3', '4', '5', '6', '7', '8'], 
+    image: kalaja_j_1, 
+    gallery: [kalaja_j_1, kalaja_j_2, kalaja_j_3, kalaja_j_4, kalaja_j_5],
+    socialLinks: { insta: "https://www.instagram.com/villakalaja_jezerc/", facebook: "https://www.facebook.com/profile.php?id=100063138524499", phoneNumber: "+38344224250", booking: "" },
+    location: 'Jezerc',
+    latLng: [], 
+  },
+  {
+    id: 12,
+    name: 'Villa Roza',
+    rooms: ['1'], 
+    people: ['1', '2', '3', '4', '5'], 
+    image: roza_1, 
+    gallery: [roza_1, roza_2, roza_3, roza_4, roza_5],
+    socialLinks: { insta: "https://www.instagram.com/villatrozaa/", facebook: "https://www.facebook.com/profile.php?id=100068831642222", phoneNumber: "+38349204206", booking: "" },
+    location: 'Novobërd',
+    latLng: [42.56213526274355, 21.43946585553549], 
+  },
+  {
+    id: 13,
+    name: 'Bujtina Stanet',
+    rooms: ['1', '2'], 
+    people: ['1', '2', '3', '4', '5', '6', '7', '8'], 
+    image: stanet_1, 
+    gallery: [stanet_1, stanet_2, stanet_3],
+    socialLinks: {
+      insta: "https://www.instagram.com/bujtinat_malore_stanet/",
+      facebook: "https://www.facebook.com/bujtinatmalore",
+      phoneNumber: "+38345155545",
+      booking: "",
+    },
+    location: 'Novobërd',
+    latLng: [42.56181852443112, 21.43928703039411], 
+  },
+
+
+];
+
+
+export default data
