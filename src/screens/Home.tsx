@@ -1,8 +1,4 @@
 import * as React from 'react'
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-
-import Navbar from './Navbar';
 import SpacingGrid from './Grid';
 import MultipleSelectCheckmarks from './Select';
 import data from '../data/data';
@@ -48,7 +44,6 @@ const Home = () => {
 
 
       <SpacingGrid data={items} />
- 
 
     </div>
   )

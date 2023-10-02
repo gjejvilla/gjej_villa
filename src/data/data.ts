@@ -93,7 +93,7 @@ import teliqeni_11 from '../assets/images/gallery/teliqeni/12.png'
 
 
 const data = [
-  {id: 0,
+  {id: 'te_liqeni',
     name: 'Te Liqeni',
     rooms: ['1', '2'], 
     people: ['1', '2', '3', '4', '5', '6','7','8','9'], 
@@ -104,7 +104,7 @@ const data = [
     latLng: [42.683292568943095, 20.085764075668592],
   },
   {
-    id: 1,
+    id: "villa_nur",
     name: 'Villa Nur',
     rooms: ['1', '2', '3'], 
     people: ['1', '2', '3', '4', '5', '6', '7', '8', '9'], 
@@ -118,7 +118,7 @@ const data = [
     latLng: [41.70196426348148, 20.756985358071493], 
   },
   {
-    id: 2,
+    id: "villa_riza",
     name: 'Villa Riza',
     rooms: ['1'], 
     people: ['1', '2', '3'], 
@@ -129,7 +129,7 @@ const data = [
     latLng: [42.69335154275393, 21.279656094765176], 
   },
   {
-    id: 3,
+    id: "villat_npisha",
     name: 'Villat nPisha',
     rooms: ['2'], 
     people: ['1', '2', '3', '4', '5'], 
@@ -140,7 +140,7 @@ const data = [
     latLng: [42.692646039831075, 20.07390582976762], 
   },
   {
-    id: 4,
+    id: "villat_oxygen",
     name: 'Villat Oxygen',
     rooms: ['2'], 
     people: ['1', '2', '3', '4', '5', '6'], 
@@ -151,7 +151,7 @@ const data = [
     latLng: [42.18041383211748, 20.978281814906033], 
   },
   {
-    id: 5,
+    id: "guri_i_kuq",
     name: 'Guri i Kuq',
     rooms: ['1', '2'], 
     people: ['1', '2', '3', '4', '5', '6'], 
@@ -162,7 +162,7 @@ const data = [
     latLng: [42.69134533664285, 20.112038079569615], 
   },
   {
-    id: 6,
+    id: "villat_nshpat",
     name: 'Villat nShpat',
     rooms: ['2', '3'], 
     people: ['1', '2', '3', '4', '5', '6'], 
@@ -173,7 +173,7 @@ const data = [
     latLng: [42.689026543876025, 20.092682682595534], 
   },
   {
-    id: 7,
+    id: "villat_marigo",
     name: 'Villa Marigo',
     rooms: ['2'], 
     people: ['1', '2', '3', '4', '5', '6'], 
@@ -184,7 +184,7 @@ const data = [
     latLng: [42.37108894308116, 21.049825254944814], 
   },
   {
-    id: 8,
+    id: "villat_natyra",
     name: 'Villat Natyra',
     rooms: ['2'], 
     people: ['1', '2', '3', '4', '5', '6', '7', '8'], 
@@ -195,7 +195,7 @@ const data = [
     latLng: [42.73969794330442, 20.05860304327046], 
   },
   {
-    id: 9,
+    id: "villat_casa",
     name: 'Villat Casa',
     rooms: ['1', '2'], 
     people: ['1', '2', '3', '4', '5', '6'], 
@@ -206,7 +206,7 @@ const data = [
     latLng: [], 
   },
   {
-    id: 10,
+    id: "villat_adriatiku",
     name: 'Villat Adriatiku',
     rooms: ['1'], 
     people: ['1', '2', '3', '4', '5'], 
@@ -217,7 +217,7 @@ const data = [
     latLng: [42.81546100105599, 21.35712916939967], 
   },
   {
-    id: 11,
+    id: "kalaja",
     name: 'Villa Kalaja',
     rooms: ['1'], 
     people: ['1', '2', '3', '4', '5', '6', '7', '8'], 
@@ -228,7 +228,7 @@ const data = [
     latLng: [], 
   },
   {
-    id: 12,
+    id: "villa_roza",
     name: 'Villa Roza',
     rooms: ['1'], 
     people: ['1', '2', '3', '4', '5'], 
@@ -239,7 +239,7 @@ const data = [
     latLng: [42.56213526274355, 21.43946585553549], 
   },
   {
-    id: 13,
+    id: "bujtina_stanet",
     name: 'Bujtina Stanet',
     rooms: ['1', '2'], 
     people: ['1', '2', '3', '4', '5', '6', '7', '8'], 

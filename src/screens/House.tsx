@@ -10,8 +10,8 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 const House = () => {
   const params = useParams();
-  const id = params.id ?? 1
-  const item = data.find(el => el.id === +id)
+  const id = params.id ?? ''
+  const item = data.find(el => el.id === id)
   const gallery = item?.gallery ?? []
   const navigate = useNavigate();
   const [selectedImage, setSelectedImage] = useState<string>('');
