@@ -1,12 +1,12 @@
-import React from 'react';
-import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
+import React from 'react'
+import Pagination from '@mui/material/Pagination'
+import Stack from '@mui/material/Stack'
 
 type PaginationProps = {
-  count: number;
-  page: number;
-  onChange: (event: React.ChangeEvent<unknown>, page: number) => void;
-};
+  count: number
+  page: number
+  onChange: (event: React.ChangeEvent<unknown>, page: number) => void
+}
 
 const PaginationOutlined: React.FC<PaginationProps> = ({
   count,
@@ -23,13 +23,13 @@ const PaginationOutlined: React.FC<PaginationProps> = ({
         onChange={onChange}
         sx={{
           '& .MuiPaginationItem-page.Mui-selected': {
-            backgroundColor: '#a7bb9d', 
+            backgroundColor: '#a7bb9d',
             color: 'white',
           },
         }}
       />
     </Stack>
-  );
-};
+  )
+}
 
-export default PaginationOutlined;
+export default PaginationOutlined
