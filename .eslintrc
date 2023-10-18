@@ -14,6 +14,7 @@
       "no-console": "warn",
       "no-eval": "warn",
       "import/first": "error",
-      "no-undef": "off"
+      "no-undef": "off",
+      "no-unused-vars": "off"
     }
   }
